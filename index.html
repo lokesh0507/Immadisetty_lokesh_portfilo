@@ -625,26 +625,89 @@
     .contact-links {
       display: flex;
       justify-content: center;
-      gap: 2rem;
+      gap: 1.2rem;
       flex-wrap: wrap;
-      margin-top: 2rem;
+      margin-top: 3rem;
     }
 
     .contact-link {
       display: flex;
       align-items: center;
-      gap: 0.5rem;
-      color: var(--muted);
+      gap: 0.8rem;
       text-decoration: none;
-      font-size: 0.75rem;
-      letter-spacing: 0.08em;
-      transition: color 0.2s;
-      border-bottom: 1px solid transparent;
-      padding-bottom: 2px;
+      font-size: 0.78rem;
+      letter-spacing: 0.06em;
+      padding: 1rem 1.8rem;
+      border: 1px solid var(--border);
+      background: var(--card);
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
     }
-    .contact-link:hover {
+    .contact-link::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+    .contact-link:hover { transform: translateY(-4px); }
+
+    .contact-link.email {
       color: var(--accent);
-      border-bottom-color: var(--accent);
+      border-color: rgba(74,240,196,0.3);
+    }
+    .contact-link.email::before {
+      background: linear-gradient(135deg, rgba(74,240,196,0.08), transparent);
+    }
+    .contact-link.email:hover {
+      border-color: var(--accent);
+      box-shadow: 0 8px 32px rgba(74,240,196,0.2), 0 0 0 1px var(--accent);
+    }
+    .contact-link.email:hover::before { opacity: 1; }
+
+    .contact-link.phone {
+      color: var(--accent2);
+      border-color: rgba(110,124,255,0.3);
+    }
+    .contact-link.phone::before {
+      background: linear-gradient(135deg, rgba(110,124,255,0.08), transparent);
+    }
+    .contact-link.phone:hover {
+      border-color: var(--accent2);
+      box-shadow: 0 8px 32px rgba(110,124,255,0.2), 0 0 0 1px var(--accent2);
+    }
+    .contact-link.phone:hover::before { opacity: 1; }
+
+    .contact-link.linkedin {
+      color: var(--accent3);
+      border-color: rgba(240,168,74,0.3);
+    }
+    .contact-link.linkedin::before {
+      background: linear-gradient(135deg, rgba(240,168,74,0.08), transparent);
+    }
+    .contact-link.linkedin:hover {
+      border-color: var(--accent3);
+      box-shadow: 0 8px 32px rgba(240,168,74,0.2), 0 0 0 1px var(--accent3);
+    }
+    .contact-link.linkedin:hover::before { opacity: 1; }
+
+    .contact-link-icon {
+      font-size: 1.2rem;
+      flex-shrink: 0;
+    }
+    .contact-link-info { text-align: left; }
+    .contact-link-label {
+      font-size: 0.6rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      opacity: 0.6;
+      display: block;
+      margin-bottom: 0.2rem;
+    }
+    .contact-link-value {
+      font-size: 0.78rem;
+      font-weight: 500;
     }
 
     /* Footer */
@@ -1013,6 +1076,7 @@
       </a>
     </div>
   </section>
+
   <!-- FOOTER -->
   <footer>
     <span>© 2026 Immadisetty Lokesh</span>
