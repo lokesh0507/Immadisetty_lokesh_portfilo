@@ -392,6 +392,17 @@
       color: var(--accent);
     }
 
+    .exp-subproject {
+      grid-column: 1 / -1;
+      font-size: 0.72rem;
+      color: var(--accent3);
+      letter-spacing: 0.08em;
+      font-style: italic;
+      margin-top: 0.8rem;
+      padding-top: 0.8rem;
+      border-top: 1px dashed var(--border);
+    }
+
     /* SKILLS */
     .skills { background: var(--bg); }
 
@@ -779,10 +790,11 @@
         <span class="line1">Immadisetty</span>
         <span class="line2">Lokesh</span>
       </h1>
-      <p class="hero-title">Full Stack Developer & ServiceNow Engineer</p>
+      <p class="hero-title">Software Engineer · Full Stack · ServiceNow</p>
       <p class="hero-desc">
-        Computer Science graduate with hands-on experience building microservice architectures,
-        incident management platforms, and scalable web applications. Based in Bengaluru, Karnataka.
+        Software Engineer with hands-on experience in AI-assisted security tools, ServiceNow development,
+        Java full stack, Spring Boot, React.js and REST APIs. I build secure, scalable enterprise
+        applications. Based in Bengaluru, Karnataka.
       </p>
       <div class="hero-actions">
         <a href="#contact" class="btn-primary">Get in Touch</a>
@@ -790,11 +802,11 @@
       </div>
       <div class="hero-stats">
         <div>
-          <div class="stat-num">2+</div>
+          <div class="stat-num">~2</div>
           <div class="stat-label">Years Experience</div>
         </div>
         <div>
-          <div class="stat-num">3+</div>
+          <div class="stat-num">4</div>
           <div class="stat-label">Projects Built</div>
         </div>
         <div>
@@ -819,25 +831,23 @@
         <div>
           <div class="exp-company">Allegion India Private Limited</div>
           <div class="exp-role">Software Trainee</div>
-          <div class="exp-project">↳ Project: AI-Assisted Security Scanner Assessment Tool</div>
-                   
-        <ul class="exp-bullets">
+        </div>
+        <div class="exp-period">Feb 2026 – Present</div>
 
-          <li>Designed and implemented a microservice dependency graph to visualize and analyze inter-service communication, improving system understanding and impact analysis.</li>
-          <li>Collected and processed service metadata (APIs, calls, dependencies) to map upstream and downstream relationships between microservices.</li>
-          <li>Built dynamic graph representations to identify critical paths, cyclic dependencies, and failure propagation risks across services.</li>
-          <li>Enhanced debugging and maintenance by enabling faster root-cause analysis and better architectural decision-making.</li>
+        <div class="exp-subproject">↳ Project: AI-Assisted Security Scanner Tool</div>
+        <ul class="exp-bullets">
+          <li>Built a CLI-based AI-assisted security scanner for repositories using Python.</li>
+          <li>Integrated Gitleaks, Semgrep, dependency vulnerability scanning and Claude AI for multi-layered security analysis.</li>
+          <li>Implemented AI batching, session continuity, validation pass and severity normalization.</li>
+          <li>Generated consolidated HTML and PDF security reports.</li>
+          <li>Automated repository scans using GitHub Actions.</li>
         </ul>
 
-          
-          <div class="exp-project">↳ Project: Microservice Dependency Graph</div>
-        </div>
-        <div class="exp-period">02/2026</div>
+        <div class="exp-subproject">↳ Project: Credential Platform</div>
         <ul class="exp-bullets">
-          <li>Designed and implemented a microservice dependency graph to visualize and analyze inter-service communication, improving system understanding and impact analysis.</li>
-          <li>Collected and processed service metadata (APIs, calls, dependencies) to map upstream and downstream relationships between microservices.</li>
-          <li>Built dynamic graph representations to identify critical paths, cyclic dependencies, and failure propagation risks across services.</li>
-          <li>Enhanced debugging and maintenance by enabling faster root-cause analysis and better architectural decision-making.</li>
+          <li>Contributed to Credential Platform migration, supporting digital credential lifecycle management.</li>
+          <li>Worked with event-driven microservices using Event Hubs, publishers, consumers, and PACS integrations.</li>
+          <li>Assisted with cloud-native deployment using ASP.NET Core, Docker, Azure Kubernetes Service (AKS), and Azure-based integrations.</li>
         </ul>
       </div>
 
@@ -845,14 +855,14 @@
         <div>
           <div class="exp-company">Revature BrightSpeed</div>
           <div class="exp-role">ServiceNow Developer Intern</div>
-          <div class="exp-project">↳ Project: Capstone — Incident Management</div>
+          <div class="exp-project">↳ Project: Incident Management System</div>
         </div>
-        <div class="exp-period">01/2025 – 02/2026</div>
+        <div class="exp-period">Jan 2025 – Feb 2026</div>
         <ul class="exp-bullets">
-          <li>Developed a full-stack Incident Management application using React (MUI) and Node.js, integrating securely with ServiceNow via OAuth 2.0 PKCE authentication.</li>
-          <li>Implemented end-to-end CRUD operations for Incidents by consuming ServiceNow REST APIs using Axios, with token refresh and secure session handling.</li>
-          <li>Built dynamic UI features such as incident search, update, delete, and create forms using Material UI, React Hooks, and state management.</li>
-          <li>Developed a backend BFF layer for proxying ServiceNow API calls, handling authentication, secure cookies, error handling, and cross-origin access.</li>
+          <li>Developed a full-stack Incident Management application using React (MUI) and Node.js.</li>
+          <li>Integrated ServiceNow REST APIs using OAuth 2.0 PKCE authentication.</li>
+          <li>Implemented CRUD operations using Axios.</li>
+          <li>Built secure backend proxy APIs and handled authentication.</li>
         </ul>
       </div>
 
@@ -868,11 +878,22 @@
       <div class="skill-block">
         <div class="skill-cat">Programming Languages</div>
         <div class="skill-tags">
-          <span class="skill-tag">Core Java</span>
+          <span class="skill-tag">Java</span>
+          <span class="skill-tag">C#</span>
           <span class="skill-tag">JavaScript</span>
-          <span class="skill-tag">ServiceNow Scripting</span>
-          <span class="skill-tag">JSON</span>
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">SQL</span>
+        </div>
+      </div>
+
+      <div class="skill-block">
+        <div class="skill-cat">Frameworks & Libraries</div>
+        <div class="skill-tags">
           <span class="skill-tag">Spring Boot</span>
+          <span class="skill-tag">ASP.NET Core</span>
+          <span class="skill-tag">React.js</span>
+          <span class="skill-tag">Material UI</span>
+          <span class="skill-tag">Node.js</span>
         </div>
       </div>
 
@@ -880,56 +901,63 @@
         <div class="skill-cat">ServiceNow</div>
         <div class="skill-tags">
           <span class="skill-tag">ITSM</span>
+          <span class="skill-tag">Glide APIs</span>
           <span class="skill-tag">REST APIs</span>
-          <span class="skill-tag">Glide API</span>
-          <span class="skill-tag">OAuth 2.0</span>
+          <span class="skill-tag">Service Catalog</span>
           <span class="skill-tag">Catalog Builder</span>
-          <span class="skill-tag">Integrations</span>
-          <span class="skill-tag">Incident CRUD</span>
+          <span class="skill-tag">Flow Designer</span>
+          <span class="skill-tag">IntegrationHub</span>
         </div>
       </div>
 
       <div class="skill-block">
-        <div class="skill-cat">Web Development</div>
+        <div class="skill-cat">Web Technologies</div>
         <div class="skill-tags">
-          <span class="skill-tag">React.js</span>
-          <span class="skill-tag">HTML</span>
-          <span class="skill-tag">CSS</span>
-          <span class="skill-tag">Material UI</span>
-          <span class="skill-tag">Node.js</span>
-          <span class="skill-tag">Axios</span>
+          <span class="skill-tag">HTML5</span>
+          <span class="skill-tag">CSS3</span>
+          <span class="skill-tag">RESTful APIs</span>
+          <span class="skill-tag">JSON</span>
+          <span class="skill-tag">OAuth 2.0</span>
         </div>
       </div>
 
       <div class="skill-block">
-        <div class="skill-cat">Database & Tools</div>
+        <div class="skill-cat">Database</div>
         <div class="skill-tags">
-          <span class="skill-tag">SQL</span>
-          <span class="skill-tag">JDBC</span>
           <span class="skill-tag">MySQL</span>
+          <span class="skill-tag">JDBC</span>
+        </div>
+      </div>
+
+      <div class="skill-block">
+        <div class="skill-cat">DevOps & Version Control</div>
+        <div class="skill-tags">
           <span class="skill-tag">Git</span>
+          <span class="skill-tag">GitHub</span>
+          <span class="skill-tag">GitHub Actions</span>
+          <span class="skill-tag">Docker</span>
+          <span class="skill-tag">AKS</span>
+        </div>
+      </div>
+
+      <div class="skill-block">
+        <div class="skill-cat">Cloud & Tools</div>
+        <div class="skill-tags">
           <span class="skill-tag">AWS</span>
-          <span class="skill-tag">ServiceNow Platform</span>
+          <span class="skill-tag">Azure</span>
+          <span class="skill-tag">Postman</span>
+          <span class="skill-tag">VS Code</span>
         </div>
       </div>
 
       <div class="skill-block">
-        <div class="skill-cat">Testing</div>
+        <div class="skill-cat">Concepts</div>
         <div class="skill-tags">
-          <span class="skill-tag">Manual Testing</span>
-          <span class="skill-tag">Automation Testing</span>
-        </div>
-      </div>
-
-      <div class="skill-block">
-        <div class="skill-cat">Concepts & Methodologies</div>
-        <div class="skill-tags">
+          <span class="skill-tag">OOP</span>
           <span class="skill-tag">Microservices</span>
-          <span class="skill-tag">REST APIs</span>
-          <span class="skill-tag">JWT Auth</span>
-          <span class="skill-tag">Full Stack Dev</span>
-          <span class="skill-tag">ITSM</span>
-          <span class="skill-tag">API Security</span>
+          <span class="skill-tag">Data Structures</span>
+          <span class="skill-tag">API Integration</span>
+          <span class="skill-tag">Incident Management</span>
         </div>
       </div>
 
@@ -944,49 +972,42 @@
 
       <div class="proj-card">
         <div class="proj-num">01</div>
-        <div class="proj-title">E-Commerce Web Application</div>
-        <div class="proj-period">01/2024 – 06/2024</div>
+        <div class="proj-title">AI-Assisted Security Scanner</div>
+        <div class="proj-period">Feb 2026 – Present @ Allegion</div>
         <p class="proj-desc">
-          A scalable e-commerce platform with user, product, cart, and order management.
-          Features secure JWT authentication, RESTful APIs, and a dynamic React frontend
-          integrating with backend microservices via Axios.
+          CLI security scanner for repositories combining Gitleaks, Semgrep, dependency scanning and Claude AI. Includes AI batching, validation pass, severity normalization, HTML/PDF reports and automated GitHub Actions scans.
         </p>
         <div class="proj-tech">
-          <span>Java</span>
-          <span>Spring Boot</span>
-          <span>Microservices</span>
-          <span>React.js</span>
-          <span>MySQL</span>
-          <span>JWT</span>
-          <span>Spring Security</span>
+          <span>Python</span>
+          <span>Claude AI</span>
+          <span>Gitleaks</span>
+          <span>Semgrep</span>
+          <span>GitHub Actions</span>
         </div>
       </div>
 
       <div class="proj-card">
         <div class="proj-num">02</div>
-        <div class="proj-title">Microservice Dependency Graph</div>
-        <div class="proj-period">02/2026 @ Allegion</div>
+        <div class="proj-title">Credential Platform</div>
+        <div class="proj-period">Feb 2026 – Present @ Allegion</div>
         <p class="proj-desc">
-          Visual tool to map and analyze inter-service communication, identifying critical paths,
-          cyclic dependencies, and failure propagation risks. Significantly improved debugging
-          efficiency and architectural decision-making.
+          Contributed to the Credential Platform migration supporting digital credential lifecycle management using event-driven microservices, PACS integrations and cloud-native deployment.
         </p>
         <div class="proj-tech">
-          <span>Graph Visualization</span>
-          <span>Microservices</span>
-          <span>API Mapping</span>
-          <span>Root-Cause Analysis</span>
+          <span>ASP.NET Core</span>
+          <span>Event Hubs</span>
+          <span>Docker</span>
+          <span>AKS</span>
+          <span>Azure</span>
         </div>
       </div>
 
       <div class="proj-card">
         <div class="proj-num">03</div>
         <div class="proj-title">Incident Management System</div>
-        <div class="proj-period">01/2025 – 02/2026 @ Revature</div>
+        <div class="proj-period">Jan 2025 – Feb 2026 @ Revature</div>
         <p class="proj-desc">
-          Full-stack ServiceNow-integrated Incident Management app. Features OAuth 2.0 PKCE auth,
-          complete CRUD via ServiceNow REST APIs, and a BFF backend layer with secure cookie
-          management and cross-origin access handling.
+          Full-stack ServiceNow-integrated Incident Management app with OAuth 2.0 PKCE authentication, CRUD via ServiceNow REST APIs and a secure backend proxy layer.
         </p>
         <div class="proj-tech">
           <span>React</span>
@@ -995,6 +1016,23 @@
           <span>ServiceNow</span>
           <span>OAuth 2.0</span>
           <span>Axios</span>
+        </div>
+      </div>
+
+      <div class="proj-card">
+        <div class="proj-num">04</div>
+        <div class="proj-title">E-Commerce Web Application</div>
+        <div class="proj-period">Academic Project</div>
+        <p class="proj-desc">
+          E-commerce platform built with Java, Spring Boot and microservices. REST APIs with Spring Data JPA and MySQL, JWT authentication with Spring Security, and a React.js frontend using Axios.
+        </p>
+        <div class="proj-tech">
+          <span>Java</span>
+          <span>Spring Boot</span>
+          <span>Microservices</span>
+          <span>React.js</span>
+          <span>MySQL</span>
+          <span>JWT</span>
         </div>
       </div>
 
@@ -1008,24 +1046,10 @@
     <div class="edu-timeline reveal">
 
       <div class="edu-item">
-        <div class="edu-period">08/2020 – 05/2024</div>
+        <div class="edu-period">2020 – 2024</div>
         <div class="edu-degree">B.Tech — Computer Science & Engineering</div>
-        <div class="edu-school">Veltech Rangarajan Dr.Sagunthala R&D Institute of Science and Technology</div>
+        <div class="edu-school">Veltech Rangarajan Dr. Sagunthala R&D Institute of Science and Technology</div>
         <span class="edu-cgpa">CGPA: 8.68</span>
-      </div>
-
-      <div class="edu-item">
-        <div class="edu-period">06/2018 – 05/2020</div>
-        <div class="edu-degree">Intermediate</div>
-        <div class="edu-school">Nirmala Junior College</div>
-        <span class="edu-cgpa">CGPA: 7.59</span>
-      </div>
-
-      <div class="edu-item">
-        <div class="edu-period">06/2017 – 05/2018</div>
-        <div class="edu-degree">SSC</div>
-        <div class="edu-school">Sri Chaitanya Techno School</div>
-        <span class="edu-cgpa">CGPA: 9.2</span>
       </div>
 
     </div>
@@ -1038,11 +1062,7 @@
     <div class="cert-grid reveal">
       <div class="cert-item">
         <div class="cert-icon">◈</div>
-        <div class="cert-name">Claude 101: Prompt Engineering & AI Assistant Fundamentals -- Anthropic  </div>
-      </div>
-      <div class="cert-item">
-        <div class="cert-icon">◈</div>
-        <div class="cert-name">Udemy — Scripting & Advanced Development in ServiceNow</div>
+        <div class="cert-name">Anthropic — Claude 101: Prompt Engineering & AI Assistant Fundamentals</div>
       </div>
       <div class="cert-item">
         <div class="cert-icon">◈</div>
@@ -1050,11 +1070,11 @@
       </div>
       <div class="cert-item">
         <div class="cert-icon">◈</div>
-        <div class="cert-name">CV Corp — Java Full Stack</div>
+        <div class="cert-name">Udemy — Scripting and Advanced Development in ServiceNow</div>
       </div>
       <div class="cert-item">
         <div class="cert-icon">◈</div>
-        <div class="cert-name">CCNA — Introduction to Cybersecurity</div>
+        <div class="cert-name">CV-Corp — Java Full Stack</div>
       </div>
     </div>
   </section>
@@ -1064,8 +1084,8 @@
     <div class="section-label">// Let's connect</div>
     <div class="contact-big">Get In Touch</div>
     <p style="color:var(--text);font-size:0.85rem;max-width:460px;margin:0 auto;line-height:1.8;opacity:0.75;">
-      Open to new opportunities in full-stack development, ServiceNow engineering,
-      and microservices architecture. Let's build something great together.
+      Open to opportunities in software engineering, AI-assisted security tools,
+      ServiceNow and full-stack development. Let's build something great together.
     </p>
     <div class="contact-links">
       <a href="mailto:lokeshimmadisetty74@gmail.com" class="contact-link email">
